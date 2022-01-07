@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Favorite Games</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer type="text/javascript" src="./src/index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h3>Game Ratings</h3>
+    </header>
+
+    <!-- Game Bar -->
+    <div id="game-list">
+      <!-- Game Images Here -->
+    </div>
+    <div id="filter-buttons">
+      <button id="all-games">All Games</button>
+      <button id="mmorpg">mmorpg</button>
+      <button id="RPG">RPG</button>
+      <button id="moba">moba</button>
+    </div>
+
+    <!-- Game Details -->
+    <div id="game-detail">
+      <!-- game detail -->
+      <img class="game-image" src="./src/gamer.jpg" alt="GG" />
+      <h2 class="name"></h2>
+      <h3 class="type"></h3>
+    </div>
+
+    <h3>Rating:</h3>
+    <p><span id="rating-display">-</span> / 10</p>
+    <h3>Comment:</h3>
+    <p id="comment-display"></p>
+
+    <!-- New  Form -->
+    <form id="new-game">
+      <h4>Add a new game!</h4>
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="new-name" />
+      <label for="type">Game Type: </label>
+      <input type="text" name="type" id="new-type" />
+      <label for="image">Image: </label>
+      <input type="text" name="image" id="new-image" />
+      <label for="rating">Rating: </label>
+      <input type="number" name="rating" id="new-rating" />
+      <label for="new-comment">Comment: </label>
+      <textarea name="new-comment" id="new-comment"></textarea>
+      <input type="submit" value="Create" />
+    </form>
+    <div id="delete-button"></div>
+  </body>
+</html>
